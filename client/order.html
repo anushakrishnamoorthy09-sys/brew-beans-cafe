@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Order Online | Brew & Beans</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar menu-navbar">
+      <div class="logo">
+        <h2>☕ Brew & Beans</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <button class="order-btn">
+        Order Online
+      </button>
+    </nav>
+  </header>
+
+  <!-- Order Hero -->
+  <section class="order-hero">
+    <h1>Order Online</h1>
+    <p>Your favorite coffee is just a click away.</p>
+  </section>
+
+  <!-- Order Section -->
+  <section class="order-section">
+
+    <!-- Menu Items -->
+    <div class="products">
+
+      <div class="product-card">
+        <h3>☕ Cappuccino</h3>
+        <p>₹160</p>
+        <button
+    onclick="
+      addToCart(
+        'Cappuccino',
+        160
+      )
+    "
+  >
+    Add to Cart
+  </button>
+      </div>
+
+      <div class="product-card">
+        <h3>☕ Latte</h3>
+        <p>₹180</p>
+       <button
+    onclick="
+      addToCart(
+        'Latte',
+        180
+      )
+    "
+  >
+    Add to Cart
+  </button>
+      </div>
+
+      <div class="product-card">
+        <h3>🍟 French Fries</h3>
+        <p>₹110</p>
+        <button
+    onclick="
+      addToCart(
+        'French Fries',
+        110
+      )
+    "
+  >
+    Add to Cart
+  </button>
+      </div>
+
+      <div class="product-card">
+        <h3>🍰 Brownie</h3>
+        <p>₹120</p>
+        <button
+    onclick="
+      addToCart(
+        'Brownie',
+        120
+      )
+    "
+  >
+    Add to Cart
+  </button>
+      </div>
+
+    </div>
+
+    <!-- Cart -->
+  <section class="cart">
+     <h2>Your Cart</h2>
+
+     <ul id="cartItems"></ul>
+
+     <h3>
+       Total: ₹<span id="total">0</span>
+     </h3>
+  </section>
+
+</section>
+<section class="checkout">
+
+  <h2>Checkout</h2>
+
+  <form id="checkoutForm">
+
+    <input
+      type="text"
+      id="customerName"
+      placeholder="Your Name"
+      required
+    >
+
+    <input
+      type="email"
+      id="customerEmail"
+      placeholder="Your Email"
+      required
+    >
+
+    <button type="submit">
+      Place Order
+    </button>
+
+  </form>
+
+  <p id="orderMessage"></p>
+
+</section>
+<script src="js/order.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

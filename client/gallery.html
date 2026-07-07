@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Brew & Beans</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar menu-navbar">
+      <div class="logo">
+        <h2>☕ Brew & Beans</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <button class="order-btn">Order Online</button>
+    </nav>
+  </header>
+
+  <!-- Gallery Hero -->
+  <section class="gallery-hero">
+    <h1>Our Gallery</h1>
+    <p>Moments, flavors, and memories from Brew & Beans.</p>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="gallery-section">
+
+ <div class="gallery-buttons">
+  <button class="gallery-btn active" data-filter="all">All</button>
+  <button class="gallery-btn" data-filter="coffee">Coffee</button>
+  <button class="gallery-btn" data-filter="cafe">Cafe</button>
+  <button class="gallery-btn" data-filter="desserts">Desserts</button>
+ </div>
+
+    <div class="gallery-container">
+
+      <div class="gallery-card" data-category="coffee">
+        <img src="images/gallery/coffee1.jpg" alt="Coffee">
+      </div>
+
+      <div class="gallery-card" data-category="cafe">
+        <img src="images/gallery/cafe1.jpg" alt="Cafe">
+      </div>
+
+      <div class="gallery-card" data-category="desserts">
+        <img src="images/gallery/dessert1.jpg" alt="Dessert">
+      </div>
+
+      <div class="gallery-card" data-category="coffee">
+        <img src="images/gallery/coffee2.jpg" alt="Coffee">
+      </div>
+
+      <div class="gallery-card" data-category="cafe">
+        <img src="images/gallery/cafe2.jpg" alt="Cafe">
+      </div>
+
+      <div class="gallery-card" data-category="desserts">
+        <img src="images/gallery/dessert2.jpg" alt="Dessert">
+      </div>
+
+    </div>
+
+  </section>
+ <script src="js/gallery.js"></script>
+
+</body>
+</html>

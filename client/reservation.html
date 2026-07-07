@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation | Brew & Beans</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar menu-navbar">
+      <div class="logo">
+        <h2>☕ Brew & Beans</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <button class="order-btn">Order Online</button>
+      <p id="message"></p>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="reservation-hero">
+    <h1>Reserve a Table</h1>
+    <p>Book your perfect coffee experience with us.</p>
+  </section>
+
+  <!-- Reservation Form -->
+  <section class="reservation-section">
+   <form id="reservationForm" class="reservation-form">
+
+  <input
+    type="text"
+    id="name"
+    placeholder="Full Name"
+    required
+  >
+
+  <input
+    type="email"
+    id="email"
+    placeholder="Email Address"
+    required
+  >
+
+  <input
+    type="text"
+    id="phone"
+    placeholder="Phone Number"
+    required
+  >
+
+  <input
+    type="date"
+    id="date"
+    required
+  >
+
+  <input
+    type="time"
+    id="time"
+    required
+  >
+
+  <input
+    type="number"
+    id="guests"
+    placeholder="Number of Guests"
+    required
+  >
+
+  <textarea
+    id="requests"
+    placeholder="Special Requests">
+  </textarea>
+
+  <button type="submit">
+    Book a Table
+  </button>
+
+</form>
+
+<p id="message"></p>
+
+</section>
+<script src="js/reservation.js"></script>
+
+</body>
+</html>

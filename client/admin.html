@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Reservation Dashboard</h1>
+<div class="dashboard-card">
+  <h2>Total Reservations</h2>
+  <p id="totalReservations">0</p>
+</div>
+
+<input
+  type="text"
+  id="search"
+  placeholder="Search by customer name..."
+>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Guests</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+
+  <script src="js/admin.js"></script>
+
+</body>
+</html>
