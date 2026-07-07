@@ -20,7 +20,7 @@ async function loadOrders() {
 
     const response =
       await fetch(
-        "http://localhost:5000/api/orders"
+        "https://brew-beans-api.onrender.com/api/orders"
       );
 
     allOrders =
@@ -149,7 +149,7 @@ async function deleteOrder(id) {
   try {
 
     await fetch(
-      `http://localhost:5000/api/orders/${id}`,
+      `https://brew-beans-api.onrender.com/api/orders/${id}`,
       {
         method: "DELETE"
       }
@@ -170,7 +170,7 @@ async function changeStatus(
   try {
 
     await fetch(
-      `http://localhost:5000/api/orders/${id}`,
+      `https://brew-beans-api.onrender.com/api/orders/${id}`,
       {
         method: "PUT",
         headers: {

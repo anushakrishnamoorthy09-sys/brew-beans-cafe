@@ -47,7 +47,7 @@ checkoutForm.addEventListener(
 
       const response =
         await fetch(
-          "http://localhost:5000/api/orders",
+          "https://brew-beans-api.onrender.com/api/orders",
           {
             method: "POST",
             headers: {

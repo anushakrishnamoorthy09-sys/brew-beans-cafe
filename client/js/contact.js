@@ -40,7 +40,7 @@ form.addEventListener(
 
       const response =
         await fetch(
-          "http://localhost:5000/api/messages",
+          "https://brew-beans-api.onrender.com/api/messages",
           {
             method: "POST",
             headers: {

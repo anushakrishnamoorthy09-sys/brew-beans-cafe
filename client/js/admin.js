@@ -1,6 +1,6 @@
 async function loadReservations() {
   const response = await fetch(
-    "http://localhost:5000/api/reservations"
+    "https://brew-beans-api.onrender.com/api/reservations"
   );
 
   const reservations =
@@ -40,7 +40,7 @@ async function deleteReservation(id) {
 
   const response =
     await fetch(
-      `http://localhost:5000/api/reservations/${id}`,
+      `https://brew-beans-api.onrender.com/api/reservations/${id}`,
       {
         method: "DELETE"
       }

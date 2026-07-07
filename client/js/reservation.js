@@ -17,7 +17,7 @@ form.addEventListener("submit", async (e) => {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/reservations",
+      "https://brew-beans-api.onrender.com/api/reservations",
       {
         method: "POST",
         headers: {
