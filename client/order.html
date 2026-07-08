@@ -24,85 +24,85 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
-      <button class="order-btn">
-        Order Online
-      </button>
     </nav>
   </header>
 
-  <!-- Order Hero -->
-  <section class="order-hero">
+  <section class="page-title">
     <h1>Order Online</h1>
     <p>Your favorite coffee is just a click away.</p>
-  </section>
+</section>
 
   <!-- Order Section -->
   <section class="order-section">
 
     <!-- Menu Items -->
-    <div class="products">
+  <div class="products">
 
-      <div class="product-card">
-        <h3>☕ Cappuccino</h3>
-        <p>₹160</p>
-        <button
-    onclick="
-      addToCart(
-        'Cappuccino',
-        160
-      )
-    "
-  >
-    Add to Cart
-  </button>
-      </div>
+  <!-- Cappuccino -->
+  <div class="product-card">
+    <img src="images/menu/cauppocino.jpg" alt="Cappuccino">
+    <h3>Cappuccino</h3>
+    <p>₹160</p>
+    <button onclick="addToCart('Cappuccino',160)">Add to Cart</button>
+  </div>
 
-      <div class="product-card">
-        <h3>☕ Latte</h3>
-        <p>₹180</p>
-       <button
-    onclick="
-      addToCart(
-        'Latte',
-        180
-      )
-    "
-  >
-    Add to Cart
-  </button>
-      </div>
+  <!-- Latte -->
+  <div class="product-card">
+    <img src="images/menu/lattee.jpg" alt="Latte">
+    <h3>Latte</h3>
+    <p>₹180</p>
+    <button onclick="addToCart('Latte',180)">Add to Cart</button>
+  </div>
 
-      <div class="product-card">
-        <h3>🍟 French Fries</h3>
-        <p>₹110</p>
-        <button
-    onclick="
-      addToCart(
-        'French Fries',
-        110
-      )
-    "
-  >
-    Add to Cart
-  </button>
-      </div>
+  <!-- Mocha -->
+  <div class="product-card">
+    <img src="images/menu/mocha.jpg" alt="Mocha">
+    <h3>Mocha</h3>
+    <p>₹200</p>
+    <button onclick="addToCart('Mocha',200)">Add to Cart</button>
+  </div>
 
-      <div class="product-card">
-        <h3>🍰 Brownie</h3>
-        <p>₹120</p>
-        <button
-    onclick="
-      addToCart(
-        'Brownie',
-        120
-      )
-    "
-  >
-    Add to Cart
-  </button>
-      </div>
+  <!-- Hot Chocolate -->
+  <div class="product-card">
+    <img src="images/menu/hot-chocolate.jpg" alt="Hot Chocolate">
+    <h3>Hot Chocolate</h3>
+    <p>₹190</p>
+    <button onclick="addToCart('Hot Chocolate',190)">Add to Cart</button>
+  </div>
 
-    </div>
+  <!-- Fries -->
+  <div class="product-card">
+    <img src="images/menu/fries.jpg" alt="French Fries">
+    <h3>French Fries</h3>
+    <p>₹110</p>
+    <button onclick="addToCart('French Fries',110)">Add to Cart</button>
+  </div>
+
+  <!-- Cheese Sandwich -->
+  <div class="product-card">
+    <img src="images/menu/cheese-sandwich.jpg" alt="Cheese Sandwich">
+    <h3>Cheese Sandwich</h3>
+    <p>₹150</p>
+    <button onclick="addToCart('Cheese Sandwich',150)">Add to Cart</button>
+  </div>
+
+  <!-- Brownie -->
+  <div class="product-card">
+    <img src="images/menu/brownie.jpg" alt="Brownie">
+    <h3>Brownie</h3>
+    <p>₹120</p>
+    <button onclick="addToCart('Brownie',120)">Add to Cart</button>
+  </div>
+
+  <!-- Chocolate Cake -->
+  <div class="product-card">
+    <img src="images/menu/chocolate-cake.jpg" alt="Chocolate Cake">
+    <h3>Chocolate Cake</h3>
+    <p>₹220</p>
+    <button onclick="addToCart('Chocolate Cake',220)">Add to Cart</button>
+  </div>
+
+</div>
 
     <!-- Cart -->
   <section class="cart">
@@ -145,7 +145,24 @@
   <p id="orderMessage"></p>
 
 </section>
-<script src="js/order.js"></script>
+<!-- Receipt Modal -->
+</div>
+<div id="receiptModal" class="modal">
+
+  <div class="modal-content">
+
+    <span id="closeReceipt">&times;</span>
+
+    <div id="receiptContent"></div>
+
+    <button id="printReceipt">
+      🖨 Print Receipt
+    </button>
+
+  </div>
+
+</div>
+<!-- <script src="js/order.js"></script> -->
 <script src="js/cart.js"></script>
 <script src="js/checkout.js"></script>
 </body>

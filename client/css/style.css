@@ -363,26 +363,6 @@ body {
   font-weight: bold;
   color: #6b4f3b;
 }
-/* About Hero */
-.about-hero {
-  height: 50vh;
-  background: linear-gradient(
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-    ),
-    url("../images/about/about-bg.jpg");
-
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  color: white;
-  text-align: center;
-}
 
 .about-hero h1 {
   font-size: 60px;
@@ -447,13 +427,6 @@ body {
 .stat-card p {
   margin-top: 15px;
   color: #555;
-}
-/* Gallery Hero */
-.gallery-hero {
-  background: #2c1810;
-  color: white;
-  text-align: center;
-  padding: 100px 8%;
 }
 
 .gallery-hero h1 {
@@ -525,13 +498,6 @@ body {
   background: #2c1810;
   color: white;
 }
-/* Reservation Hero */
-.reservation-hero {
-  background: #2c1810;
-  color: white;
-  text-align: center;
-  padding: 100px 8%;
-}
 
 .reservation-hero h1 {
   font-size: 55px;
@@ -581,13 +547,6 @@ body {
   font-weight: bold;
   color: green;
 }
-/* Order Hero */
-.order-hero {
-  background: #2c1810;
-  color: white;
-  text-align: center;
-  padding: 100px 8%;
-}
 
 .order-hero h1 {
   font-size: 55px;
@@ -604,31 +563,74 @@ body {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 30px;
 }
 
 .product-card,
 .cart {
   background: white;
-  padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 20px rgba(0,0,0,.1);
 }
 
 .product-card {
+  overflow: hidden;
   text-align: center;
+  transition: .3s;
+  padding-bottom: 20px;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
 .product-card h3 {
+  margin-top: 15px;
   color: #2c1810;
 }
 
 .product-card p {
-  margin: 15px 0;
   font-size: 20px;
+  font-weight: bold;
+  color: #8B4513;
 }
 
+.cart {
+  padding: 30px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-actions button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.remove-btn:hover {
+  background: #b02a37;
+}
 .add-btn,
 #placeOrderBtn {
   background: #2c1810;
@@ -653,13 +655,6 @@ body {
   cursor: pointer;
   margin-left: 10px;
   font-size: 16px;
-}
-/* Contact Hero */
-.contact-hero {
-  background: #2c1810;
-  color: white;
-  text-align: center;
-  padding: 100px 8%;
 }
 
 .contact-hero h1 {
@@ -875,6 +870,160 @@ tr:nth-child(even) {
   border-radius: 8px;
   margin-left: 10px;
 }
+.receipt{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+margin-top:30px;
+
+text-align:left;
+
+}
+
+.receipt h2{
+
+text-align:center;
+
+color:#5b341d;
+
+}
+
+.receipt ul{
+
+margin:20px 0;
+
+padding-left:20px;
+
+}
+
+.receipt hr{
+
+margin:20px 0;
+
+}
+/* Receipt Modal */
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    z-index:999;
+}
+
+.modal-content{
+    background:white;
+    width:420px;
+    max-width:90%;
+    margin:60px auto;
+    padding:30px;
+    border-radius:15px;
+}
+
+#closeReceipt{
+    float:right;
+    font-size:28px;
+    cursor:pointer;
+}
+
+#printReceipt{
+    width:100%;
+    margin-top:20px;
+}
+.booking-success{
+
+    background:#ffffff;
+
+    max-width:500px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+.booking-success h2{
+
+    color:#5b341d;
+
+    margin-bottom:20px;
+
+}
+
+.booking-success p{
+
+    margin:12px 0;
+
+    font-size:17px;
+
+    color:#333;
+
+}
+
+.booking-success hr{
+
+    margin:18px 0;
+
+    border:1px solid #eee;
+
+}
+
+.booking-error{
+
+    background:#ffe6e6;
+
+    color:#d32f2f;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin:20px auto;
+
+    max-width:500px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+}
+#toast{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#5b341d;
+color:white;
+padding:15px 25px;
+border-radius:8px;
+display:none;
+z-index:9999;
+}
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -1010,4 +1159,22 @@ tr:nth-child(even) {
     padding: 30px;
   }
 }
+}
+/* ---------- Page Title ---------- */
+
+.page-title {
+    padding: 120px 8% 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.page-title h1 {
+    font-size: 48px;
+    color: #3b2416;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    font-size: 18px;
+    color: #666;
 }
